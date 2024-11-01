@@ -1,0 +1,210 @@
+/* Estilo Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: url("assets/empreendedorismo-univers.jpg") no-repeat center fixed;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    position: relative;
+}
+
+
+
+.header-content {
+    background: rgba(0, 0, 0, 0.6); /* Fundo escuro com transparência */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+/* Barra de Navegação Fixa */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    z-index: 1000; /* Garante que a navegação fique acima de outros elementos */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #1a73e8; /* Cor ao passar o mouse */
+}
+
+
+/* Espaço no topo para conteúdo não sobrepor a navbar */
+.header-content {
+    padding-top: 70px; /* Ajuste o valor para o tamanho da navbar */
+}
+
+
+
+/* Main Sections */
+main {
+    padding: 20px;
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#about h2 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+/* Objectives Section */
+#objectives ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#objectives li {
+    margin-bottom: 10px;
+}
+
+/* Events Section */
+#events {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.event-list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.event-item {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Resources Section */
+#resources ul {
+    list-style-type: none;
+}
+
+#resources li {
+    margin-bottom: 10px;
+}
+
+#resources a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+#resources a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact label {
+    font-weight: bold;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #1558b0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .event-list {
+        flex-direction: column;
+    }
+}
